@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Botique</title>
+    <style>
+      body {
+        background-image: url(./assets/16.jpg);
+        background-repeat: no-repeat;
+        background-size:1250px;
+        background-attachment: fixed;
+      }
+      .div1 {
+        width: 1200px;
+        height: 600px;
+      }
+      header {
+        background-color:lightpink;
+        height: 100px;
+        width: 1200px;
+        color: brown;
+        font-style: italic;
+        line-height: 100px;
+        font-size: 30px;
+        margin:2px;
+        border-radius: 20px;
+      }
+      nav{
+        text-align:right;
+        margin-top:-140px;
+        margin-right: 15px;
+      }
+      a {
+    
+        margin-top:2px;
+        margin-left: 2px;
+        color: black;
+        text-decoration: none;
+      }
+    li{
+        display: inline-block;
+        font-size:medium;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        line-height:30px;
+        border-radius:50%;
+    }
+    li:hover{
+        background-color:greenyellow;
+        transition: 0.2s;
+    }
+      
+      marquee {
+        transition: 0.1s;
+      }
+      .pdiv1 {
+        height: 500px;
+        width: 600px;
+        scroll-behavior: smooth;
+      }
+      .pdiv2 {
+        height: 500px;
+        width: 600px;
+        background-color:plum;
+        float: right;
+        margin-top: -500px;
+        text-align: center;
+        background-image: url(./assets/17.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .pdiv2 > h2 {
+        font-size: 30px;
+        margin-top: 50px;
+        font-style: italic;
+      }
+      .pdiv2 > p {
+        font-size: 30px;
+        color:firebrick;
+        font-family:serif;
+        text-transform: uppercase;
+        
+      }
+      .sbtn {
+        background-color:pink;
+        border-radius: 10px;
+        color:black;
+        font-size: 30px;
+        margin-top: -30px;
+        padding: 10px;
+      }
+      .sbtn:hover {
+        background-color:greenyellow;
+        transition: 0.7s;
+      }
+      .div2 {
+        border: 5px solid;
+        padding: 0px;
+        margin: 15px;
+        background-color:rgb(237, 118, 147);
+        border-color:rgb(99, 191, 231);
+        border-radius: 70px;
+        height: 300px;
+        width: 1150px;
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+      .cola {
+        margin-left: 45px;
+        padding: 0px;
+        padding-top: 2px;
+        color: white;
+        text-align: center;
+        font-size: 20px;
+        float: left;
+      }
+      .cola b {
+        color:greenyellow;
+      }
+      #bc {
+        padding-left: 155px;
+      }
+      #cc {
+        padding-left: 155px;
+      }
+      .div3 {
+        width: 1150px;
+        height: 400px;
+        background-color:rgba(255, 192, 203,0.90);
+        text-align: center;
+        font-family: sans-serif;
+        font-size: 20px;
+        margin: 5px;
+        padding:10px;
+        border-radius: 50px;
+      }
+      .div3 > #prod1 {
+        margin-top: 25px;
+      }
+
+      .prod {
+        float: left;
+        padding-left: 70px;
+        margin-top: 30px;
+      }
+      .prods:hover{
+        transform:scale(1.5);
+      }
+      #prod1 > p {
+        margin-top: 30px;
+      }
+      .div4 {
+        height: 520px;
+        width: 1180px;
+        border-radius: 50px;
+        margin: 3px;
+        padding: 5px;
+        margin-right: 3px;
+        text-align: center;
+        font-size: 25px;
+        margin-top: 80px;
+        font-family: sans-serif;
+        background-color:rgba(237, 118, 147,0.70);
+      }
+      .div5 {
+        height: 270px;
+        width: 1200px;
+      }
+      #disc {
+        width: 800px;
+        height: 60px;
+        border: 10px solid pink;
+        padding: 2px;
+        margin: 20px;
+        outline: 30px solid deeppink;
+        border-style: groove;
+        border-width: 50px;
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 10px;
+        background-color: white;
+        margin-left: 200px;
+      }
+      #disc > b {
+        color: crimson;
+      }
+      .div6 {
+        height: 500px;
+        width: 1180px;
+        background-color:rgba(255, 192, 203,0.90);
+        margin: 3px;
+        padding: 5px;
+        margin-right: 3px;
+        font-size: 20px;
+        text-align: center;
+        border-radius: 50px;
+      }
+      .dress1 {
+        height: 360px;
+        width: 200px;
+        border: 5px solid;
+        border-color:black;
+        border-radius: 15px;
+        background-color: white;
+        margin-left: 80px;
+        margin-bottom: -10px;
+      }
+      .dress4 {
+        height: 360px;
+        width: 200px;
+        border: 5px solid;
+        border-color:black;
+        border-radius: 15px;
+        background-color: white;
+        margin-left:350px;
+        margin-top: -365px;
+        margin-bottom:-10px;
+      }
+      .dress3 {
+        height: 360px;
+        width: 200px;
+        border: 5px solid;
+        border-color:black;
+        border-radius: 15px;
+        background-color: white;
+        margin-left:630px;
+        margin-top: -370px;
+      }
+      
+      .dress2 {
+        height: 360px;
+        width: 200px;
+        border: 5px solid;
+        border-color:black;
+        border-radius: 15px;
+        background-color: white;
+        margin-left: 900px;
+        align-items: center;
+        margin-top: -370px;
+        margin-right: 5px;
+      }
+      .page4 > h4 {
+        text-align: center;
+        font-family: sans-serif;
+      }
+      .page4 p {
+        font-size: 20px;
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+      
+      .msnb {
+        padding: 15px;
+        font-size: 10px;
+        font-family: "Courier New", Courier, monospace;
+        background-color:lightgreen;
+        border-radius: 10px;
+        float: left;
+      }
+      .msnb:hover {
+        background-color:greenyellow;
+        transition: 0.7s;
+      }
+      
+      .div7{
+        height: 600px;
+        width: 1170px;
+        background-color:rgb(237, 118, 147);
+        padding-left: 20px;
+        margin-top: -2px;
+        border-radius: 50px;
+      }
+      .div8{
+        height: 300px;
+        width: 1190px;
+        background-color:rgba(255, 192, 203,0.90);
+        margin: 2px;
+        color:black ;
+        border-radius: 50px;
+      }
+      .div9{
+        height:350px;
+        width:1190px;
+        background-color:rgba(237, 118, 147,0.70);
+        font: size 18px;;
+    font-style: italic;
+      border-radius: 50px;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="div1">
+      <header>
+        
+        <img src="assets\1.jpg" alt="wpic" width="100px" height="100px" style="float: left;border-radius: 20px;" />
+        <h1>&#128149;MAHE BOUTIQUE&#128149;</h1>
+        <nav>
+          <ul>
+            <li><a href="home.html"style="font-style: normal;">&#127968;Home</a></li>
+            <li><a href="contact.html"style="font-style: normal;">&#128222;Contact</a></li>
+            <li><a href="shopnow.html"style="font-style: normal;">&#128722;All Product</a></li>
+            <li><a href="account.html"style="font-style: normal;">&#128100;Account</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="pdiv1">    
+        <marquee behavior="scroll" direction="left">
+          <img src="assets\2.jpg" alt="wname" style="height: 500px; width: 500px" />
+          <img src="assets\18.jpg" alt="wname" style="height: 500px; width: 500px" />
+          <img src="assets\19.jpg" alt="wname" style="height: 500px; width: 500px" />
+          <img src="assets\20.jpg" alt="wname" style="height: 500px; width: 500px" />
+        </marquee>  
+      </div>
+      <div class="pdiv2">
+        <h2 class="bpp">
+            <b>&#128149;BEST CLOTHES</b>
+        </h2>
+        <p class="uyc">
+          Upgrade your choice as Classic look and Smart Function
+        </p>
+        <a href="shopnow.html" class="sbtn">Shop Now</a>
+        <p><span style="font-size: 500%;color:pink;">&hearts;</span></p>
+      </div>
+    </div>
+    <div class="div2">
+      <div class="cola">
+        <img src="assets\3.jpg" alt="freeship" style="width: 200px; height: 200px" />
+        <p>Free <b>Shipping</b><br />on order above Rs 1999/-</p>
+      </div>
+      <div class="cola" id="bc">
+        <img src="assets\4.jpg" alt="freeship" style="width: 200px; height: 200px" />
+        <p>Payment and<br/>Data <b>Security</b></p>
+      </div>
+      <div class="cola" id="cc">
+        <img src="assets\2.png" alt="freeship" style="width: 200px; height: 200px" />
+        <p>New Discount <b>Coupans</b><br />every week</p>
+      </div>
+    </div>
+    <div class="div3">
+      <h3>MOST LOVED PRODUCT</h3>
+      <div class="prod" id="prod1">
+        <img src="assets\5.jpg" alt="wat1" class="prods"style="height: 200px; width: 200px;border-radius: 50%;" />
+        <p><b></b><br />Ethnic Wear&#128149;<br />Rs.2800</p>
+      </div>
+      <div class="prod" id="prod2">
+        <img src="assets\6.jpg" alt="wat2" class="prods"style="height: 200px; width: 200px;border-radius: 50%;" />
+        <p><b></b><br />Modern Tops&#128149;<br />Rs.2000</p>
+      </div>
+
+      <div class="prod" id="prod3">
+        <img src="assets\7.jpg" alt="wat3" class="prods"style="height: 200px; width: 200px;border-radius: 50%;" />
+        <p><b></b><br />Kurtas&#128149;<br />Rs.1200</p>
+      </div>
+      <div class="prod" id="prod4">
+        <img src="assets\8.jpg" alt="watc4" class="prods"style="height: 200px; width: 200px;border-radius: 50%;" />
+        <p><b></b><br />Tops&#128149;<br />Rs.1000</p>
+      </div>
+    </div>
+    <div class="div4">
+      <h2>Types of Dresses</h2>
+      <div class="dress1">
+        <h4 style="color:hotpink;">Ethnic Wear</h4>
+        <p>BUY Dresses online from Our Store</p>
+        <img src="assets\9.jpg" alt="menw" style="width: 100px;height: 100px;border-radius: 50%;"/><br>
+        <a href="ethnic.html" class="msnb">Shop Now</a>
+      </div>
+      <div class="dress4">
+        <h4 style="color:hotpink;"> Modern Tops</h4>
+        <p>Buy Trendy dresses at our Store</p>
+        <img src="assets\10.jpg" alt="ccwatch" style="width: 100px;height: 100px;border-radius: 50%;"/>
+        <br>
+        <a href="modern.html" class="msnb">Shop Now</a>
+      </div>
+      <div class="dress2">
+        <h4 style="color:hotpink;">T-Shirts</h4>
+        <p>Explore the best T-Shirts only at our Store</p>
+        <img src="assets\11.jpg" alt="smwatch" style="width: 100px;height: 100px;border-radius: 50%;"/>
+        <a href="shirts.html" class="msnb">Shop Now</a>
+      </div>
+      <div class="dress3">
+        <h4 style="color:hotpink;">Kurtas</h4>
+        <p>BUY Kurtas at our store</p>
+        <img src="assets\7.jpg" alt="womenwatch" style="width: 100px;height: 100px;border-radius: 50%;" />
+        <a href="kurtas.html" class="msnb">Shop Now</a>
+      </div>
+    </div>
+    <br><br>
+    <div class="div5">
+      <h3 id="disc">
+        THE ULTIMATE OFFER FOR DRESS ADDICTS
+        <b>
+          &#128516;MAHA SUMMER SALE<br />
+          <del>50%</del>&nbsp;&nbsp;<ins>60% </ins>OFF on all Dresses!!!</b>
+        <a href="shopnow.html" class="msnb" style="float: right">Shop Now</a>
+      </h3>
+    </div>
+    <div class="div6">
+      <h1>Trending Dresses</h1>
+      <div>
+        <div class="prod" id="prod1">
+          <img src="assets\23.jpg" alt="wat1" class="prods"style="height: 200px; width: 200px;border-radius: 50%;" />
+          <p><b></b><br />KURTAS&#128149;<br />&#9734 &#9734 &#9734 &#9734 &#9734<br />Rs.1800</p>
+        </div>
+        <div class="prod" id="prod2">
+          <img src="assets\24.jpg" alt="wat2" class="prods"style="height: 200px; width: 200px;border-radius: 50%;" />
+          <p><b></b><br />MODERN TOPS&#128149;<br />&#9734 &#9734 &#9734 &#9734 &#9734<br />Rs.2000</p>
+        </div>
+        <div class="prod" id="prod3">
+          <img src="assets\22.jpg" alt="wat3" class="prods"style="height: 200px; width: 200px;border-radius: 50%;" />
+          <p><b></b><br />ETHNIC&#128149;<br />&#9734 &#9734 &#9734 &#9734 &#9734<br />Rs.3200</p>
+        </div>
+        <div class="prod" id="prod4">
+            <img src="assets\25.jpg" alt="watc4" class="prods"style="height: 200px; width: 200px;border-radius: 50%;"/>
+            <p><b></b><br />T-Shirts&#128149;<br />&#9734 &#9734 &#9734 &#9734 &#9734<br />Rs.3500</p>
+          </div>      
+      </div>
+    </div>
+    <div class="div7">
+      <h1 style="text-align: center;">CUSTOMER REVIEW</h1>
+      <p>Fast shipping and excellent customer service. The product was even better than expected. I will definitely be a returning customer.</p>
+      <img src="assets\13.jpg" alt="girl" style="width:50px;height: 50px;border-radius: 50%;">
+      <p style="font-size: smaller;">ARCHANA</p>
+      <p>Great user experience on your website. I found exactly what I was looking for at a great price. I will definitely be telling my friends</p>
+      <img src="assets\14.jpg" alt="girl" style="width:50px;height: 50px;border-radius: 50%;">
+      <p style="font-size: smaller;">DEVA</p>
+      <p>Thank you for the excellent shopping experience. It arrived quickly and was exactly as described. I will definitely be shopping with you again in the future.</p>
+      <img src="assets\15.jpg" alt="girl" style="width:50px;height: 50px;border-radius: 50%;">
+      <p style="font-size: smaller;">VARSHU</p>
+      <p>Thank you for the excellent shopping experience. It arrived quickly and was exactly as described. I will definitely be shopping with you again in the future.</p>
+      <img src="assets\21.jpg" alt="girl" style="width:50px;height: 50px;border-radius: 50%;">
+      <p style="font-size: smaller;">ATCHU</p>
+    </div><br>
+    <div class="div8">
+      <table class="table" style="width: 1000px;border-color: black;margin-left: 100px;">
+        <tr>
+          <th style="width: 500px;"><img src="assets\1.jpg" style="width: 100px;height: 100px;border-radius: 50%;"></th>
+          <th style="width: 400px;">QUCIK LINKS<hr></th>
+          <th style="width: 400px;">DOWNLOAD OUR MOBILE APP<hr></th>  
+        </tr>
+        <tr>
+          <td>&#9829 Fast shipping and excellent customer service.<br>&#9829 The product was even better than expected.<br>
+            &#9829 I will definitely be a returning customer.<br>
+            &#9829 Great user experience on your website.</td>
+          <td style="text-align:left;">&#10085;ABOUT<br>&#10085;CHECKOUT<br>&#10085;CART<br>&#10085;CONTACT<br>&#10085;HOME<br>&#10085;MYACCOUNT<br>&#10085;SHOP</td>
+          <td><center><img src="assets\16.jpg" style="width: 100px;height: 100px;border-radius: 50%;"><br><h3>Mahe Boutique.com</h3>Download our Mobile App to Login&#128516;</center></td>
+        </tr>
+      </table>
+    </div>
+    <footer>
+    <div class="div9">
+      <center>
+      <h1>CONTACT</h1>
+        <b><p><h2>Don't miss out on these Special Offers &#9829</h2></p><br>CONTACT US</b><br>
+                402,pacifica,<br>Thudiyalur<br>COIMBATORE
+                <br><b>PHONE NUMBER :</b> +91 9876543210<br>
+                <b>EMAIL :</b> maheboutique0914@gmail.com 
+                <p>Visit our website for more details: <a href="#">maheboutique.com</a></p>
+                <p><b>Follow us on social media</b> <br>
+                  </p>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                    <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                  </svg>
+                 </center>
+    </div>
+    </footer>
+  </body>
+</html>
